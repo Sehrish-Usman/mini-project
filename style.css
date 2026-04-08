@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    background: linear-gradient(45deg, #884ada, #3c6382);
+    color: white;
+    padding: 25px;
+}
+
+/* NAVBAR */
+nav {
+    background: #1e3799;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #61460c;
+    border-radius: 5px;
+}
+
+/* LAYOUT */
+.container {
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 200px;
+    background: #369636;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar button {
+    margin: 8px 0;
+    padding: 12px;
+    border: none;
+    background: #0a3d62;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.sidebar button:hover {
+    background: #1e3799;
+}
+
+/* MAIN */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.featured {
+    margin-bottom: 20px;
+    color: #0a3d62;
+}
+
+/* PRODUCTS */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    width: calc(25% - 20px);
+    background: rgb(3, 250, 229);
+    padding: 12px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+/* BUTTON */
+.card button {
+    padding: 10px;
+    border: none;
+    background: #38ada9;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background: #079992;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    background: #0a3d62;
+    color: white;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+.social img {
+    width: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        flex-direction: row;
+        overflow-x: auto;
+    }
+}
